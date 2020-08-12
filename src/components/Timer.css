@@ -1,0 +1,15 @@
+.timer-container {
+  background-color: var(--timer-background-color);
+  border: var(--timer-border);
+  height: var(--timer-height);
+  width: var(--timer-width);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.timer-button-container {
+  display: flex;
+  justify-content: space-around;
+}
