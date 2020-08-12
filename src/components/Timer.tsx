@@ -52,7 +52,11 @@ function Timer() {
   return (
     <div className="timer-container">
       <div className="time-display">
-        {time.m}:{time.s < 10 ? `0${time.s}` : time.s}
+        <p>
+          {time.m < 10 ? `0${time.m}` : time.m}:
+          {time.s < 10 ? `0${time.s}` : time.s}
+          {/* {time.ms < 10 ? `0${time.ms}` : time.ms} */}
+        </p>
       </div>
       <div className="timer-button-container">
         <TimerButton buttonAction={startTimer} buttonValue={"Start"} />
